@@ -39,9 +39,6 @@ classifiers = [
     "Topic :: Text Processing",
     "Topic :: Utilities",
 ]
-dependencies = [
-    "Sphinx>=5",
-]
 dynamic = ["version"]
 
 [project.optional-dependencies]
@@ -75,3 +72,8 @@ exclude = [
 
 [tool.mypy]
 ignore_missing_imports = true
+
+[project.optional-dependencies]
+standalone = [
+  "sphinx > 5",
+]
